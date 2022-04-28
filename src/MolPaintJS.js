@@ -71,6 +71,7 @@ var molPaintJS = (function (molpaintjs) {
       if (e == null) {
         e = document.createElement("div");
         e.id = "MolPaintJS_Help_Widget";
+        e.style.color = "transparent";
         e.classList.add("molPaintJS-modalHelp");
         document.body.appendChild(e);
       }

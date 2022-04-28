@@ -169,6 +169,7 @@ var molPaintJS = (function (molpaintjs) {
         ""
       );
       e.innerHTML = content
+        .replaceAll("data:text/html;charset=UTF-8,", "")
         .replaceAll("%HELP_URL%", helpURL)
         .replaceAll("%VERSION%", molPaintJS.Resources["version"]);
       e.style.display = "block";
